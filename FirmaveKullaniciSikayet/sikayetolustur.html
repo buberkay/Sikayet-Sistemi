@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Şikayetlerim</title>
+
+
+    <script src="Untitled-1.js"></script>
+    <script>
+         var now=new Date();
+  $(document).ready(function(){
+     $("#btn").click(function(){
+        $("#tarih2").text(now);
+     });
+  });
+
+    </script>
+    <!--Şikayet Yazma Yeri-->
+  <script>
+     $(function(){
+            
+            $("#mesaj").hide();
+            $("#gizleme").hide(); 
+            $("#btn").click(function(){
+            $("#mesaj").show(1000);      
+            $("#gizleme").show();         
+        });        
+        });
+   
+  $(function(){
+   var icerik=$("#icerik");
+   icerik.keyup(function(){
+    
+     $("#mesaj").text(icerik.val());  
+     
+   });
+  });
+  </script>
+
+<style>
+   body {
+    margin:0;
+    padding: 0;
+    background-color: #b7d6f2;
+   }
+    #btn{
+        margin-top: 200px;
+    }
+
+    #alt{
+        margin-top: 100px;
+    }
+
+    .container li a:hover{
+      color: #f27d5c;
+     text-decoration: underline;
+    }
+    .container.nav.nav-item {
+      background-color: #f27d5c;
+    }
+    body {
+    margin:0;
+    padding: 0;
+    background: url(wallpaper2.jpg);
+    background-size: cover;
+    }
+    a{
+      color:#f27d5c
+    }
+</style>
+
+</head>
+<body>
+
+
+    <div class="container mt-3 dropdown-menu-right">           
+        <ul class="nav nav-tabs " role="button">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="musterianasayfasi.html">AnaSayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="hesabimmusteri.html"><span class="glyphicon glyphicon-user"></span>Hesabım</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link"  data-bs-toggle="tab" href="sikayetolustur.html">Şikayet Yaz</a>
+          </li>
+        </ul>      
+    </div>
+
+
+    <div class="container">
+      
+        <div class="row">
+            <div class="col-md-6 ">
+                <form >
+                    <div class="form-group ">
+                        <input type="button" class=" form-control " id="btn" value="Şikayeti Gönder" >
+                        
+                     <textarea class="form-control" name="icerik" rows="10" id="icerik" ></textarea>
+                      </div>
+                      <div class="mb-4">
+                        <div class="form-control h-auto">
+                          <input type="file" class="form-control-file" />
+                        </div>
+                      </div>
+                   
+                <form >
+            </div>
+          <div class="col-md-6 ">
+
+           
+                    <div class="form-group" id="alt">
+                        <div class="form-group">
+                            <small id="tarih2"></small>
+                            <button  class="form-control" style="background-color: #bfe3b4;" id="gizleme" >Durum: Yanıt Bekleniyor</button>
+                            <textarea class="form-control" id="mesaj" rows="3" style="display: none;" ></textarea><br>
+                        </div>
+                        <small id="tarih">10/10/2022</small>
+                        <button   class="form-control" style="background-color:red;" id="durum3" >Durum: Tamamlandı</button>
+                        <textarea class="form-control" rows="3"disabled >Dün (2 Ağustos) Migros'tan aldığım Eti Goaların tavsiye edilen son tüketim tarihi geçen aymış. Kasiyer fişi de vermedi. Tarihi gecik ürün kaç haftadır rafta ne arıyor, çalışan fişi neden vermedi? Fiş olmadığı için nasıl iade edeceğim tarihi gecik ürünü? </textarea><br>
+                   
+                    </div>
+                    <form >
+                        <div class="form-group">
+                          <small id="tarih">10/12/2021</small>
+                          <button  class="form-control" style="background-color: #bfe3b4;" id="durum2" >Durum: Yanıt Bekleniyor</button>
+                            <textarea class="form-control" rows="3">17 Temmuz'da verdiğim sipariş tedarik, bayram, yoğunluk derken aldığım 2 ürün de ''tedarik aşamasında'' gözüküyordu 10 gündür. Aldığım ürünlerden biri dün ellerine ulaşmış. Diğeri 28 Temmuz (bugün) tedarik aşamasında gözüküyordu sonra mesaj geldi gönderildiğine dair. İptal edildiğini tahmin ederek siteye baktım ve şaşırmadım.</textarea><br>
+                        </div>
+          
+            <form >
+                <div class="form-group">
+                  <small id="tarih">08/07/2018</small>
+                  <button   class="form-control" style="background-color:red;" id="durum3" >Durum: Tamamlandı</button>
+                    <textarea class="form-control" rows="3"disabled>MNG Kargo Gaziantep İbrahimli şubesi, gelen ürün için 2 kere ücret çekti kredi kartımdan, arıyorum yardımcı olmuyorlar, bu kadar uğraşmak zorunda mıyım acaba, nasıl bir Kargo şirketisiniz siz. </textarea><br>
+                </div>
+        
+        
+                
+                </form>
+                <form >
+                    <div class="form-group">
+                      <small id="tarih">17/12/2017</small>
+                      <button   class="form-control" style="background-color:red;" id="durum3" >Durum: Tamamlandı</button>
+                        <textarea class="form-control" rows="3"disabled>VakıfBank Worldcard ® 27 Aralık 2022 tarihinde kart aidatı ödemek istemediğim için kullanıma kapattım. 30 Aralık günü bankadan beni arayarak sizden yıllık kart aidatı almayacağız, kartınızı yeniden açalım dediler. Bunun üzerine kart aidatı almayacaklarsa açabileceklerini söyledim, ancak kartımı kullanıma açtıktan 1 gün sonra 219 TL kart aidatı alındığını gördüm. </textarea><br>
+                    </div>
+            
+                    </form>
+                    <form >
+                        <div class="form-group"> 
+                          <small id="tarih">23/12/2015</small>
+                          <button   class="form-control" style="background-color:red;" id="durum3" >Durum: Tamamlandı</button>
+                            <textarea class="form-control" rows="3"disabled>Amazon'a üye oldum kahve makinesi sipariş ettim açıklayıcı olmadıkları için premi üyesi olmuşum 7.90 Para çekmişler kartımdan hemen iptal ettirdim insanları böyle böyle mağdur edip paralarını topluyorsunuz hak mıdır bu </textarea><br>
+                        </div>
+                
+                        </form>
+            </form>
+            </form>
+
+          </div>
+
+         
+          </div>
+        </div>
+
+
+
+  
+</body>
+</html>

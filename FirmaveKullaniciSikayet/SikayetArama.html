@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="musterilogin.js"></script>
+    <style>
+       body {
+        margin:0;
+        padding: 0;
+        background: url(wallpaper.jpg);
+        background-size: cover;
+        }
+    
+        a{
+          color:#f27d5c
+        }
+    
+        .bio-row {
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+        padding:0 15px;
+        }
+    
+        .bio-row p span {
+        width: 100px;
+        display: inline-block; 
+        }
+        .panel{
+          background-color: #337ab7;
+        }
+        .container ul
+        {
+          background-color: #b7d6f2;
+        }
+        
+        </style>
+                <script>
+                  $(function(){
+                      $("#sikayet2").hide();
+                      $("#sikayet3").hide();
+                      $("#sikayet4").hide();
+                      $("#sikayet5").hide();
+                      $("#sikayet6").hide();
+                      $("#sikayet7").hide();
+                      $("#butonlarr").hide();
+                    $("#aramabtn").click(function () {
+                      var ara="";
+                     ara=$("#aramayeri").val();
+                      $("div:contains("+ara+")").show(1000);
+                      $("#butonlarr").show();
+                    });
+                  });
+                 </script>
+                 <script>
+                  $(function(){
+                       $("#yanitlabutonu").click(function(){
+                         
+                              alert("Şikayet Başarılı bir şekilde Yanıtlandı...");
+                              var ara="";
+                     ara=$("#aramayeri").val();
+                              $("textarea:contains("+ara+")").hide(1000);
+                              $("#butonlarr").hide();
+                              $("#tariha").hide();
+                              $("#tarih2").hide();
+                              $("#tarih3").hide();
+                              $("#tarih4").hide();
+                              $("#tarih5").hide();
+                              $("#tarih6").hide();
+                      });
+                  });
+                 </script>
+                <script>
+                      $(function(){
+          
+                      $("#silmebutonu").click(function(){
+                          var ara="";
+                     ara=$("#aramayeri").val();
+                       alert("Şikayetiniz silindi...");
+               
+                             $("textarea:contains("+ara+")").hide(1000);
+                              $("#butonlarr").hide();
+                              $("#tariha").hide();
+                              $("#tarih2").hide();
+                              $("#tarih3").hide();
+                              $("#tarih4").hide();
+                              $("#tarih5").hide();
+                              $("#tarih6").hide();
+          });
+          });
+          </script>
+      
+</head>
+<body>
+    <div class="container mt-3 dropdown-menu-right">           
+        <ul class="nav nav-tabs " role="button">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="firmaanasayfasi.html">AnaSayfa</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" data-bs-toggle="tab" href="hesabimfirma.html"><span class="glyphicon glyphicon-user"></span>Hesabım</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link"  data-bs-toggle="tab" href="sikayetgoruntulefirma.html">Şikayet Yanıtla</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link"  data-bs-toggle="tab" href="SikayetArama.html">Şikayet Ara</a>
+          </li>
+        </ul>        
+    </div>
+    <div class="container  ">
+      <div class="row" >
+         
+             
+          <div class="col-md-6" style="margin-left: 250px;" >
+              <input type="text" id="aramayeri" class="search form-control " style="margin-top: 200px;margin-right: 90px;" placeholder="Şikayet Ara"> <br><br>
+              <button class="form-control" id="aramabtn" style="background-color: aqua;">Ara</button>
+             
+                  <div class="form-group" id="deneme" >
+                      <div id="sikayet2">
+                          <small id="tariha">2022/10/08</small>
+                          <textarea  class="form-control" rows="3" disabled>Amazon hesabım geçtiğimiz günlerde çalındı hesaptan benim kartlarım dışında 25 dolarlık Gift Card alımı yapılmış ve hesabımın bağlı olduğu ülke değiştirilmiş. Bunlar yüzünden Amazon hesabımı askıya almış ve hesabıma erişim sağlayamıyorum. </textarea>         
+                             
+                      </div>
+                     
+                  </div>
+              
+                  <div class="form-group"id="deneme2"  >
+               <div id="sikayet3">
+                  <small id="tarih2">2022/11/11</small>
+                      <textarea  class="form-control" rows="3" disabled>       171-1042075-5313965 sipariş numaralı Amazon TR siparişim daha kargo kodu oluşturulmamış ve yola çıkmamış olmasına rağmen iptal etmeye çalıştığım halde sevkiyat koduoluşturulmuş diyerek iptal etmeyi red ediyorlar.</textarea>
+                     
+                  
+               </div>
+                      
+              </div>
+                
+          
+          <div class="form-group"id="deneme3" >
+              <div id="sikayet4">
+                  <small id="tarih3">2011/07/10</small>
+                  <textarea  class="form-control" rows="3" disabled>  Amazondan aldığım ürün AGT Kargo ile gönderildi. Kargo gelmediği haldegeldim bulamadım adreste deyip not düşüyor 3 gündür kuryede geziyor ürün. AGT müşteri hizmetleri kargo kuryede teslimat zamanını o belirliyor biz bir şey yapamıyoruz kimde bilmiyoruz diyor. </textarea>
+                  
+              </div>
+             
+       
+          </div>
+              <div class="form-group"id="deneme4" >
+                 <div id="sikayet5">
+                  <small id="tarih4">2022/11/13</small> 
+                  <textarea   class="form-control" rows="3" disabled> Amazon'a üye oldum kahve makinesi sipariş ettim açıklayıcı olmadıkları için premi üyesi olmuşum 7.90 Para çekmişler kartımdan hemen iptal ettirdim insanları böyle böyle mağdur edip paralarını topluyorsunuz hak mıdır bu </textarea>
+                
+                 </div>
+          </div>
+             
+                  <div class="form-group" id="deneme5">
+                      <div id="sikayet6" >
+                          <small id="tarih5">2022/11/13</small>
+                          <textarea class="form-control" rows="4" disabled>  Amazon dan asla alışveriş yapmamam gerektiğini öğrendim sorunu çözmüyorlar oyalıyorlar 11 gündür ürünüm ne iptal oluyor ne de çözüm sunuyorlar, bunlar satıcıyı değil satıcı bunları yönlendiriyor satıcıya hiçbir şekilde müdahale edemiyorlar 11 gündür.</textarea>
+                        
+                     
+                      </div>
+                      
+                  </div>
+           
+                <div class="form-group" id="deneme6">
+                  <div id="sikayet7">
+                      <small id="tarih6">2022/11/13</small>
+                      <textarea  class="form-control" rows="3" disabled>22.12.2022 tarihinde Amazon'dan almış olduğum cep telefonu için ekspres kargo ücreti ödememe rağmen tarafıma teslim edilmedi. Teslim edilmediği gibi günlerdir mağduriyet yaratılıyor. </textarea>
+                   
+                  
+                  </div>
+                  
+                </div>
+
+               <div id="butonlarr">
+                  <div class="col-md-6 ">
+                      <button class="form-control" id="yanitlabutonu" style="background-color:#b7d6f2;">Gönder</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="silmebutonu" class="form-control"style="background-color: red;">Şikayeti Sil</button>
+                        </div><br><br>
+                        <input type="text " class="form-control bg-danger" required id="gstr">
+                        
+               </div>
+             
+      </div>
+      </div>
+  </div>
+
+</body>
+</html>
+    
